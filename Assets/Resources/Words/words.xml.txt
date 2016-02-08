@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WORDS>
+   <POSITIVE>
+      <WORD>Smile</WORD>
+      <WORD>Happy</WORD>
+      <WORD>Joy</WORD>
+      <WORD>Glad</WORD>
+      <WORD>Ecstatic</WORD>
+      <WORD>Sweetness</WORD>
+   </POSITIVE>
+   <NEUTRAL>
+      <WORD>Normal</WORD>
+      <WORD>Straight Mouth</WORD>
+      <WORD>Nothing</WORD>
+      <WORD>Everything</WORD>
+      <WORD>Fluffy</WORD>
+      <WORD>Meh</WORD>
+   </NEUTRAL>
+   <NEGATIVE>
+      <WORD>Frown</WORD>
+      <WORD>Scowl</WORD>
+      <WORD>Cramp</WORD>
+      <WORD>Fail</WORD>
+      <WORD>Annoyed</WORD>
+      <WORD>Grumpy</WORD>
+      <WORD>Outraged</WORD>
+      <WORD>Tense</WORD>
+      <WORD>Dissapointment</WORD>
+   </NEGATIVE>
+</WORDS>
