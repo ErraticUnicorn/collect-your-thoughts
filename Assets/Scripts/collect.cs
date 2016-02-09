@@ -18,12 +18,17 @@ public class collect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (scoreTracker.GetScore() >= 0) {
+		NeutralScoreTracker ();
+	}
+
+	void NeutralScoreTracker() {
+		if (scoreTracker.GetScore () > 0) {
+			neutralScoreValue = -1;
+		} else if (scoreTracker.GetScore () == 0) {
 			neutralScoreValue = 0;
 		} else {
 			neutralScoreValue = 1;
 		}
-	
 	}
 
 	void OnTriggerEnter(Collider collision) {
