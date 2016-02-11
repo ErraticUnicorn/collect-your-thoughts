@@ -1,0 +1,73 @@
+[33mcommit 396863b0792248b02274826d3523c6bf5d081931[m
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Tue Feb 9 17:57:18 2016 -0500
+
+    Changes neutral thought behavior
+
+[33mcommit 30624d739284c6e8a89810445e68741b2348b98e[m
+Merge: 2c80d78 a05ea65
+Author: David Wert <david.j.wert@gmail.com>
+Date:   Tue Feb 9 17:47:03 2016 -0500
+
+    Merge pull request #4 from ErraticUnicorn/end_states
+    
+    End states
+
+[33mcommit a05ea65c178a5d55ab56ecca4f54990222073a83[m
+Merge: 5408fdd 2c80d78
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Tue Feb 9 17:45:29 2016 -0500
+
+    Merge branch 'develop' of https://github.com/ErraticUnicorn/collect-your-thoughts into end_states
+
+[33mcommit 2c80d78a590e36ea878176490fd52052dba9b7c1[m
+Merge: 4b0b1a0 1e1d957
+Author: David Wert <david.j.wert@gmail.com>
+Date:   Tue Feb 9 17:45:01 2016 -0500
+
+    Merge pull request #3 from ErraticUnicorn/main-menu
+    
+    Main menu
+
+[33mcommit 1e1d957294d37470c19ddcfae4193710ccacfe70[m
+Author: Kevin Henke <henkekm@gmail.com>
+Date:   Tue Feb 9 17:42:32 2016 -0500
+
+    Adds Main Menu
+
+[33mcommit 5408fdd7c2f6750ea77b93a21d0a251cbbc2ccbb[m
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Tue Feb 9 17:41:39 2016 -0500
+
+    Adds end states
+
+[33mcommit 2aa932a53e8c020a4e30953aeb04e7e084cba0dd[m
+Merge: 758dc1b 4b0b1a0
+Author: Kevin Henke <henkekm@gmail.com>
+Date:   Tue Feb 9 16:43:09 2016 -0500
+
+    Merge branch 'develop' of https://github.com/ErraticUnicorn/collect-your-thoughts into main-menu
+
+[33mcommit 4b0b1a0c82190e5b27f14806c588049c0856dba5[m
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Tue Feb 9 16:41:54 2016 -0500
+
+    Adds tags
+
+[33mcommit 758dc1b484435f4c7802b6902b31974d3b05a712[m
+Author: Kevin Henke <henkekm@gmail.com>
+Date:   Mon Feb 8 18:01:08 2016 -0500
+
+    Creates Main Menu WIP
+
+[33mcommit 05bf93fa00afe7f9e7b4a3766c8ca11641822032[m
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Mon Feb 8 17:52:22 2016 -0500
+
+    Inital commit barebones mechanic
+
+[33mcommit 789733b86013b1ddb1c496875e7dcc104da9bf6c[m
+Author: Erratic Unicorn <david.j.wert@gmail.com>
+Date:   Mon Feb 8 17:51:51 2016 -0500
+
+    :tada: Added .gitattributes & .gitignore files
