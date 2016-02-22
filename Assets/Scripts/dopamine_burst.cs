@@ -23,7 +23,6 @@ public class dopamine_burst : MonoBehaviour {
 	}
 
 	public IEnumerator Dissapate() {
-		Debug.Log ("hi");
 		yield return new WaitForSeconds (burstDissapationTime);
 		collider.enabled = false;
 	}

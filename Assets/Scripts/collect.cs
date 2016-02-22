@@ -9,13 +9,11 @@ public class collect : MonoBehaviour {
 	private int posScoreValue = 1;
 	private score_tracker scoreTracker;
 	private word_behavior moodText;
-	private dopamine_burst dopamine;
 
 	// Use this for initialization
 	void Awake () {
 		scoreTracker = GameObject.Find ("ScoreTracker").GetComponent<score_tracker> ();
-		moodText = GameObject.Find ("MoodTextUpdater").GetComponent<word_behavior>();
-		dopamine = GameObject.Find ("DopamineBurst").GetComponent<dopamine_burst> ();
+		moodText = GameObject.Find ("MoodTextUpdater").GetComponent<word_behavior> ();
 	}
 	
 	// Update is called once per frame
@@ -34,7 +32,7 @@ public class collect : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collision) {
-		if (collision.gameObject.name == "Word 1(Clone)") {
+		if (collision.gameObject.name == "Thought(Clone)") {
 			
 			if (collision.tag == "negative") {
 				scoreTracker.AddScore (negScoreValue);
@@ -44,7 +42,6 @@ public class collect : MonoBehaviour {
 			if (collision.tag == "positive") {
 				scoreTracker.AddScore (posScoreValue);
 				moodText.setGoodThought ();
-				dopamine.Burst ();
 			}
 
 			if (collision.tag == "neutral") {

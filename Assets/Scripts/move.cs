@@ -17,7 +17,6 @@ public class move : MonoBehaviour {
 
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		this.transform.position = new Vector3(ray.origin.x, ray.origin.y, ray.origin.z);
-		Debug.Log (this.transform.position.z);
 
 		Debug.DrawRay(Camera.main.gameObject.transform.position, ray.direction, Color.white);
 

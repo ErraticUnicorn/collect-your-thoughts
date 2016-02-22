@@ -3,7 +3,7 @@ using System.Collections;
 
 public class spawn_manager : MonoBehaviour {
 
-	public GameObject word;
+	public GameObject thought;
 	public float spawnTime = 3f;
 	public Transform[] spawnPoints;
 	private GameObject player, skull;
@@ -23,7 +23,7 @@ public class spawn_manager : MonoBehaviour {
 		//Turn on component based on score
 		float spawnChance = Random.value;
 
-		GameObject newThought = (GameObject) (Instantiate (word, NextSpawnPosition(), Quaternion.identity));
+		GameObject newThought = (GameObject) (Instantiate (thought, NextSpawnPosition(), Quaternion.identity));
 		neg = newThought.GetComponent<negative_thought> ();
 		pos = newThought.GetComponent<positive_thought> ();
 		neu = newThought.GetComponent<neutral_thought> ();
