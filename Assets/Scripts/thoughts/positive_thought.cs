@@ -25,14 +25,15 @@ public class positive_thought : MonoBehaviour {
 		dir.x += (Random.value - 0.5f) * Time.deltaTime * 10;
 		dir.y += (Random.value - 0.5f) * Time.deltaTime * 10;
 		dir.Normalize();
-		Debug.Log (this.transform.position.z);
 		transform.Translate(exitDir * dir * speed * 0.5f * Time.deltaTime);
 	}
 
 	void OnTriggerExit(Collider collisionInfo) {
-		exitDir = 0;
-		hasLeftConsciousness = true;
-		StartCoroutine (WaitAndDestroy ());
+		if (collisionInfo.gameObject.name == "Skull") {
+			exitDir = 0;
+			hasLeftConsciousness = true;
+			StartCoroutine (WaitAndDestroy ());
+		}
 
 	}
 	void OnEnable() {

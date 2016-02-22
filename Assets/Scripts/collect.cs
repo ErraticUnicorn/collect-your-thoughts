@@ -9,11 +9,13 @@ public class collect : MonoBehaviour {
 	private int posScoreValue = 1;
 	private score_tracker scoreTracker;
 	private word_behavior moodText;
+	private dopamine_burst dopamine;
 
 	// Use this for initialization
 	void Awake () {
 		scoreTracker = GameObject.Find ("ScoreTracker").GetComponent<score_tracker> ();
 		moodText = GameObject.Find ("MoodTextUpdater").GetComponent<word_behavior>();
+		dopamine = GameObject.Find ("DopamineBurst").GetComponent<dopamine_burst> ();
 	}
 	
 	// Update is called once per frame
@@ -42,6 +44,7 @@ public class collect : MonoBehaviour {
 			if (collision.tag == "positive") {
 				scoreTracker.AddScore (posScoreValue);
 				moodText.setGoodThought ();
+				dopamine.Burst ();
 			}
 
 			if (collision.tag == "neutral") {
