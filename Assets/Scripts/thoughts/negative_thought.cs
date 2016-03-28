@@ -7,10 +7,13 @@ public class negative_thought : MonoBehaviour {
 	private float exitDir = 1;
 	private GameObject player;
 	private Vector3 dir = new Vector3();
+	private GameObject coreThought;
+	private GameObject target;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Marker");
+		target = player;
 		dir = player.transform.position - transform.position;
 	}
 	
@@ -19,7 +22,7 @@ public class negative_thought : MonoBehaviour {
 		dir.x += (Random.value - 0.5f) * Time.deltaTime * 10;
 		dir.y += (Random.value - 0.5f) * Time.deltaTime * 10;
 		dir.Normalize ();
-		this.transform.position = Vector3.MoveTowards (this.transform.position, player.transform.position, speed * Time.deltaTime);
+		this.transform.position = Vector3.MoveTowards (this.transform.position, target.transform.position, speed * Time.deltaTime);
 	}
 
 	void OnDestroy() {
@@ -32,5 +35,17 @@ public class negative_thought : MonoBehaviour {
 
 	void OnTriggerExit(Collider collisionInfo) {
 		exitDir = 0;
+	}
+
+	void OnTriggerEnter(Collider collisionInfo) {
+		if (collisionInfo.tag == "core") {
+			target = collisionInfo.gameObject;
+		}
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (collision.gameObject.tag == "core") {
+			speed = 0f;
+		}
 	}
 }
