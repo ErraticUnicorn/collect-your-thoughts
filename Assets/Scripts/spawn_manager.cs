@@ -21,18 +21,20 @@ public class spawn_manager : MonoBehaviour {
 
 	void Spawn() {
 		//Turn on component based on score
-		float spawnChance = Random.value;
+		float spawnChance = Random.value * 10;
 
 		GameObject newThought = (GameObject) (Instantiate (thought, NextSpawnPosition(), Quaternion.identity));
 		neg = newThought.GetComponent<negative_thought> ();
 		pos = newThought.GetComponent<positive_thought> ();
 		neu = newThought.GetComponent<neutral_thought> ();
-
-		if (spawnChance < .2f) {
+		Debug.Log (spawnChance);
+		if (spawnChance <= 2f) {
 			neu.enabled = true;
-		} else if (spawnChance < .6f) {
+		}
+		if (spawnChance > 2f && spawnChance < 6f) {
 			pos.enabled = true;
-		} else {
+		}
+		if (spawnChance >= 6f) {
 			neg.enabled = true;
 		}
 	}
